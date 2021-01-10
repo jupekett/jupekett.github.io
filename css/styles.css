@@ -128,7 +128,6 @@ nav a:hover {
 
 .content--home {
   margin: 0 auto;
-  padding: 0 0 2.5em 0;
   max-width: 600px;
 }
 
@@ -206,7 +205,8 @@ img {
 /* BLOGIN TYYLIT */
 
 .content--blog {
-  margin: 0 1em;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .blog-post {
