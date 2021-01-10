@@ -1,179 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Portfolio - jupekett</title>
-  <meta name="description" content="My portfolio of schoolwork and other projects">
-  <meta name="author" content="jupekett">
+    <title>Portfolio - jupekett</title>
+    <meta
+      name="description"
+      content="My portfolio of schoolwork and other projects"
+    />
+    <meta name="author" content="jupekett" />
 
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+  </head>
 
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <article>
-      <h1>Projects</h1>
-      <p>Here I present some of my most relevant programming projects. I divided the works
-        in different categories based on technologies used:
-        <ul>
-          <li>JavaScipt & React</li>
-          <li>Java on AWS</li>
-          <li>Java</li>
-        </ul>
-      </p>
-
-      <section id="react">
-        <h2>JavaScript & React</h2>
-
+  <body>
+    <header>
+      <h1>Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+    <div class="content--portfolio">
+      <main>
         <article>
-          <h3>Othello</h3>
-          <figure>
-            <a href="content/othello.png">
-              <img class="thumb" src="content/othello-thumb.png" alt="Picture of the Othello web application" />
-            </a>
-          </figure>
-          <p><a href="http://users.jyu.fi/~jupekett/TIEA2120/othello-react/">Deployed site</a></p>
-          <p><a href="https://gitlab.jyu.fi/jupekett/othello-react">Code repository</a></p>
-          <p> A game of Othello created with React. It was developed as a bonus
-          exercise for the course <emph>TIEA2120 Web-käyttöliittymien ohjelmointi</emph> at
-          JYU. Application language is in finnish.</p> 
-          <p> Size of the gameboard can be chosen. Moves are made by drag 'n
-          dropping the player's draggable disk into a legal square, which are
-          highlighted on the board.
-        </article>
-
-        <article>
-          <h3>Rogaining data front end</h3>
-          <figure>
-            <a href="content/vt6.png">
-              <img class="thumb" src="content/vt6-thumb.png" alt="Picture of VT6 exercise application" />
-            </a>
-          </figure>
-          <p><a
-          href="http://users.jyu.fi/~jupekett/TIEA2120/vt6/vt6.html">Deployed
-          site</a></p>
-          <p><a href="https://gitlab.jyu.fi/jupekett/vt6">Code repository</a></p>
-          <p>A React front end for displaying and manipulating data from a
-          rogaining contest. This application was built as an exercise for the
-          course <emph>TIEA2120 Web-käyttöliittymien ohjelmointi</emph> at JYU.
-          Application language is in finnish.</p>
-          <p> Teams can be added and modified, with some input verification in
-          place. Checkpoint codes and coordinates can be modified. Utilizes <a
-          href="https://leafletjs.com/">Leaflet-library</a> with <a
-          href="https://www.openstreetmap.org/">OpenStreetMap</a> tiles to
-          display a tiny map when clicking on checkpoint coordinates. The
-          checkpoint marker can then be drag 'n dropped, which updates teams'
-          points and distances.</p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Java on AWS</h2>
-        <p>
-          These application are written in Java and are presently deployed to AWS
-          Elastic Beanstalk.
-        </p>
-
-        <article>
-          <h3>Accommodation Reservation System</h3>
-          <figure>
-            <a href="content/ars.png">
-              <img class="thumb" src="content/ars-thumb.png" alt="Picture of Accommodation Reservation System data" />
-            </a>
-          </figure>
-          <p><a
-          href="http://accommodationreservationsystem.us-west-2.elasticbeanstalk.com/">Deployed
-          site</a></p>
-          <p><a href="https://github.com/jupekett/ties4560-task4">Code repository</a></p>
-          <p>A RESTful API created during the course <emph>TIES4560 SOA and
-          Cloud Computing</emph>. Technologies used include Java and Jersey. Information about usage
-          can be found on the <a
-          href="http://accommodationreservationsystem.us-west-2.elasticbeanstalk.com/documentation/">
-          documentation page</a>.</p>
-        </article>
-
-        <article>
-          <h3>IP-enthusiast</h3>
-          <figure>
-            <a href="content/ip.png">
-              <img class="thumb" src="content/ip-thumb.png" alt="Picture of IP-enthusiast UI." />
-            </a>
-          </figure>
-          <p><a
-          href="http://ipenthusiast-env.eba-x28ab2gb.eu-north-1.elasticbeanstalk.com/">Deployed
-          site</a></p>
-          <p><a href="https://gitlab.jyu.fi/jupekett/ties4560-task1">Code repository</a></p>
-          <p>A pseudo-humorous web application, which leverages two existing SOAP services
-            to convert an IP address to uppercase words. It was developed for
-            the course <emph>TIES4560 SOA and Cloud Computing</emph> at JYU.
-            The idea was influenced by the style
-            of Dan Higginbotham, author of <a
-            href="https://www.braveclojure.com/">Clojure for the brave and
-            true</a>.
+          <h1>Projects</h1>
+          <p>
+            Here I present some of my most relevant programming projects. I
+            divided the works in different categories based on technologies
+            used:
           </p>
-          <p>Most of the source files in com.jupekett.ties4560.task1.client
-            were generated by JAX-WS RI, and much of the code is based on
-            course examples.
-          </p>
+          <ul>
+            <li><a href="#js-react">JavaScipt & React</a></li>
+            <li><a href="#java-aws">Java on AWS</a></li>
+            <li><a href="#java-desktop">Java on desktop</a></li>
+          </ul>
+
+          <section id="js-react">
+            <h2 class="centered-vertical margin-top">JavaScript & React</h2>
+
+            <article class="project-card">
+              <div class="project-content">
+                <section class="project-info">
+                  <h3 class="project-heading">Othello</h3>
+                  <p>
+                    A game of Othello created with React. It was developed as a
+                    bonus exercise for the course
+                    <emph>TIEA2120 Web-käyttöliittymien ohjelmointi</emph> at
+                    JYU. Application language is in finnish.
+                  </p>
+                  <p>
+                    Size of the gameboard can be chosen. Moves are made by drag
+                    'n dropping the player's draggable disk into a legal square,
+                    which are highlighted on the board.
+                  </p>
+
+                  <ul>
+                    <li>
+                      <a
+                        href="http://users.jyu.fi/~jupekett/TIEA2120/othello-react/"
+                        >Deployed site</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://gitlab.jyu.fi/jupekett/othello-react"
+                        >Code repository</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <a href="content/othello.png">
+                  <img
+                    class="thumb"
+                    src="content/othello-thumb.png"
+                    alt="Picture of the Othello web application"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-content">
+                <section class="project-info">
+                  <h3 class="project-heading">Rogaining data front end</h3>
+                  <p>
+                    A React front end for displaying and manipulating data from
+                    a rogaining contest. This application was built as an
+                    exercise for the course
+                    <emph>TIEA2120 Web-käyttöliittymien ohjelmointi</emph> at
+                    JYU. Application language is in finnish.
+                  </p>
+                  <p>
+                    Teams can be added and modified, with some input
+                    verification in place. Checkpoint codes and coordinates can
+                    be modified. Utilizes
+                    <a href="https://leafletjs.com/">Leaflet-library</a> with
+                    <a href="https://www.openstreetmap.org/">OpenStreetMap</a>
+                    tiles to display a tiny map when clicking on checkpoint
+                    coordinates. The checkpoint marker can then be drag 'n
+                    dropped, which updates teams' points and distances.
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="http://users.jyu.fi/~jupekett/TIEA2120/vt6/vt6.html"
+                        >Deployed site</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://gitlab.jyu.fi/jupekett/vt6"
+                        >Code repository</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <a href="content/vt6.png">
+                  <img
+                    class="thumb"
+                    src="content/vt6-thumb.png"
+                    alt="Picture of VT6 exercise application"
+                  />
+                </a>
+              </div>
+            </article>
+          </section>
+
+          <section id="java-aws">
+            <h2 class="centered-vertical margin-top">Java on AWS</h2>
+            <p>
+              These application are written in Java and are presently deployed
+              to AWS Elastic Beanstalk.
+            </p>
+
+            <article class="project-card">
+              <div class="project-content">
+                <section class="project-info">
+                  <h3 class="project-heading">
+                    Accommodation Reservation System
+                  </h3>
+                  <p>
+                    A RESTful API created during the course
+                    <emph>TIES4560 SOA and Cloud Computing</emph>. Technologies
+                    used include Java and Jersey. Information about usage can be
+                    found on the
+                    <a
+                      href="http://accommodationreservationsystem.us-west-2.elasticbeanstalk.com/documentation/"
+                    >
+                      documentation page</a
+                    >.
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="http://accommodationreservationsystem.us-west-2.elasticbeanstalk.com/"
+                        >Deployed site</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://github.com/jupekett/ties4560-task4"
+                        >Code repository</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <a href="content/ars.png">
+                  <img
+                    class="thumb"
+                    src="content/ars-thumb.png"
+                    alt="Picture of Accommodation Reservation System data"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-content">
+                <section class="project-info">
+                  <h3 class="project-heading">IP-enthusiast</h3>
+                  <p>
+                    A pseudo-humorous web application, which leverages two
+                    existing SOAP services to convert an IP address to uppercase
+                    words. It was developed for the course
+                    <emph>TIES4560 SOA and Cloud Computing</emph> at JYU. The
+                    idea was influenced by the style of Dan Higginbotham, author
+                    of
+                    <a href="https://www.braveclojure.com/"
+                      >Clojure for the brave and true</a
+                    >.
+                  </p>
+                  <p>
+                    Most of the source files in
+                    com.jupekett.ties4560.task1.client were generated by JAX-WS
+                    RI, and much of the code is based on course examples.
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="http://ipenthusiast-env.eba-x28ab2gb.eu-north-1.elasticbeanstalk.com/"
+                        >Deployed site</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://gitlab.jyu.fi/jupekett/ties4560-task1"
+                        >Code repository</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <a href="content/ip.png">
+                  <img
+                    class="thumb"
+                    src="content/ip-thumb.png"
+                    alt="Picture of IP-enthusiast UI."
+                  />
+                </a>
+              </div>
+            </article>
+          </section>
+
+          <section id="java-desktop">
+            <h2 class="centered-vertical margin-top">Java on desktop</h2>
+
+            <article class="project-card">
+              <div class="project-content">
+                <section class="project-info">
+                  <h3 class="project-heading">Multicast chat</h3>
+                  <p>
+                    A multicast chat client for the course
+                    <emph>TIEA322 Tietoliikenneprotokollat</emph>. Implements
+                    the required TIEA322MulticastChat protocol. Program language
+                    is finnish. Two version of the protocol are implemented,
+                    versions 1 and 2. Version 2 includes responding to update
+                    messages, in order to print a list of current users.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="https://gitlab.jyu.fi/jupekett/multicast3"
+                        >Code repository</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <a href="content/chat.png">
+                  <img
+                    class="thumb"
+                    src="content/chat-thumb.png"
+                    alt="Picture of Multicast chat application."
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-content">
+                <section class="project-info">
+                  <h3 class="project-heading">Nuottirekisteri</h3>
+                  <p>
+                    A Java application for storing information about sheet music
+                    that the user owns. It was a course project for
+                    <emph>TIEP111 Ohjelmointi 2</emph> at JYU, and as such is
+                    not exactly unique in execution. Regardless, I did my best
+                    to create good code in 2019.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="https://gitlab.jyu.fi/jupekett/nuottirekisteri"
+                        >Code repository</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <a href="content/nuotti.png">
+                  <img
+                    class="thumb"
+                    src="content/nuotti-thumb.png"
+                    alt="Picture of Nuottirekisteri application."
+                  />
+                </a>
+              </div>
+            </article>
+          </section>
         </article>
-      </section>
+      </main>
+    </div>
+    <footer>
+      <address>
+        <a href="juho.p.kettunen@gmail.com">juho.p.kettunen@gmail.com</a>
+      </address>
+    </footer>
 
-      <section>
-        <h2>Java on desktop</h2>
-
-        <article>
-          <h3>Multicast chat</h3>
-          <figure>
-            <a href="content/chat.png">
-              <img class="thumb" src="content/chat-thumb.png" 
-              alt="Picture of Multicast chat application." />
-            </a>
-          </figure>
-          <p><a href="https://gitlab.jyu.fi/jupekett/multicast3">Code repository</a></p>
-          <p>A multicast chat client for the course <emph>TIEA322 
-            Tietoliikenneprotokollat</emph>. Implements the required
-          TIEA322MulticastChat protocol. Program language is finnish. Two
-          version of the protocol are implemented, versions 1 and 2. Version
-          2 includes responding to update messages, in order to print a list
-          of current users.</p>
-        </article>
-
-        <article>
-          <h3>Nuottirekisteri</h3>
-          <figure>
-            <a href="content/nuotti.png">
-              <img class="thumb" src="content/nuotti-thumb.png" alt="Picture of Nuottirekisteri application." />
-            </a>
-          </figure>
-          <p><a href="https://gitlab.jyu.fi/jupekett/nuottirekisteri">Code repository</a></p>
-          <p>A Java application for storing information about sheet music that the user owns. It was
-            a course project for <emph>TIEP111 Ohjelmointi 2</emph> at JYU, and as such
-            is not exactly unique in execution. Regardless, I did my best to create good code in 2019.
-          </p>
-        </article>
-      </section>
-
-    </article> 
-  </main>
-
-  <footer>
-    <address>
-      <a href="juho.p.kettunen@gmail.com">juho.p.kettunen@gmail.com</a>
-    </address>
-  </footer>
-
-  <script src="js/scripts.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

@@ -1,49 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Blog - jupekett</title>
-  <meta name="description" content="My blog">
-  <meta name="author" content="jupekett">
+    <title>Blog - jupekett</title>
+    <meta name="description" content="My blog" />
+    <meta name="author" content="jupekett" />
 
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+  </head>
 
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <article>
+  <body>
+    <header>
       <h1>Blog</h1>
-      <section class="blog-post">
-        <h2>Here we go...</h2>
-        <p><span class="blog-timestamp">10.1.2021 17:37</span></p>
-        <p>First version of the site is up. It has barebones front and portfolio pages.
-           Next step is probably to neaten this up with CSS. But now, I think a walk
-           with our dog Nano is in order. Some fresh air and recreation for both of
-           us :)
-        </p>
-      </section>
-    </article>
-  </main>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+    <div class="content">
+      <main>
 
-  <footer>
-    <address>
-      <a href="juho.p.kettunen@gmail.com">juho.p.kettunen@gmail.com</a>
-    </address>
-  </footer>
+        <article>
+          <section class="blog-post">
+            <h2>Maybe visually out-of-date, but functional</h2>
+            <p><span class="blog-timestamp">10.1.2021 23:30</span></p>
+            <p>
+              For the moment, these stylesheets will do. The result is
+              definitely not industry-worthy, but functional and personal enough
+              for the time being. CSS always has some tricks I need to shake out
+              of it's sleeve, but they start sticking once you stick around
+              trying long enough. And thus my first personal general-use home
+              page is out there for others to see.
+            </p>
+          </section>
+        </article>
 
-  <script src="js/scripts.js"></script>
-</body>
+        <article>
+          <section class="blog-post">
+            <h2>Here we go...</h2>
+            <p><span class="blog-timestamp">10.1.2021 17:37</span></p>
+            <p>
+              First version of the site is up. It has barebones front and
+              portfolio pages. Next step is probably to neaten this up with CSS.
+              But now, I think a walk with our dog Nano is in order. Some fresh
+              air and recreation for both of us :)
+            </p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <footer>
+      <address>
+        <a href="juho.p.kettunen@gmail.com">juho.p.kettunen@gmail.com</a>
+      </address>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
