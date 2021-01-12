@@ -1,6 +1,4 @@
-/* DOKUMENTIN YLEISET TYYLIT */
-
-/* todo */
+/* GENERAL */
 *,
 *:before,
 *:after {
@@ -60,7 +58,7 @@ emph {
   margin-top: 2em;
 }
 
-/* LISTOJEN TYYLIT */
+/* LISTS */
 
 ul {
   /* padding: 0 0 0 1em; */
@@ -72,13 +70,14 @@ li {
   margin: 5px 0;
 }
 
-/* HEADERIN TYYLIT */
+/* HEADER */
+
 header {
   padding: 10px;
   text-align: center;
   /* background-color: #559955; */
   background-color: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.0), black),
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black),
     url("../content/code-blur-half.jpg");
   background-position: 0;
 }
@@ -93,7 +92,8 @@ header h1 {
   width: fit-content;
 }
 
-/* NAVIGOINTIPALKIN TYYLIT */
+/* NAVIGATION BAR */
+
 nav {
   margin: 0 auto;
   max-width: 600px;
@@ -124,16 +124,18 @@ nav a:hover {
   }
 }
 
-/* SISÄLLÖN TYYLI */
+/* HOME PAGE */
 
 .content--home {
   margin: 0 auto;
   max-width: 600px;
+  background-color: white;
 }
 
 .content--portfolio {
   margin: 0 auto;
   max-width: 800px;
+  background-color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -148,7 +150,7 @@ nav a:hover {
   }
 }
 
-/* PROJEKTIKORTIT*/
+/* PORTFOLIO */
 
 .project-card {
   margin: 1em 0;
@@ -187,13 +189,11 @@ nav a:hover {
   }
 }
 
-/* KUVAT */
+/* IMAGES */
 
 img {
-  /* box-shadow: 10px 10px 5px grey; */
-  border: 2px solid grey;
+  border: 2px solid #ddd;
   max-width: 20em;
-  /* align-self: center; */
 }
 
 @media screen and (max-width: 600px) {
@@ -202,11 +202,13 @@ img {
   }
 }
 
-/* BLOGIN TYYLIT */
+/* BLOG */
 
 .content--blog {
   margin: 0 auto;
   max-width: 600px;
+  height: 100%;
+  background-color: white;
 }
 
 .blog-post {
@@ -229,8 +231,8 @@ img {
   }
 }
 
+/* FOOTER */
 
-/* FOOTERIN TYYLIT */
 footer {
   background-image: linear-gradient(black, rgba(0, 0, 0, 0.3)),
     url("../content/code-blur-half.jpg");
