@@ -29,31 +29,61 @@
         <article>
           <h1>Projects</h1>
           <p>
-            Here I present some relevant programming projects from my studies at JYU. Language in application GUIs is
-            most often finnish. I divided the works in different categories based on technologies used:
+            Some relevant programming projects from personal life or my studies at JYU. Language in study projects
+            might be finnish.
           </p>
           <ul>
-            <li><a href="#js-react">JavaScript & React</a></li>
+            <li><a href="#node">Node.js</a></li>
+            <li><a href="#react">React.js</a></li>
             <li><a href="#java-aws">Java on AWS</a></li>
             <li><a href="#java-desktop">Java on desktop</a></li>
           </ul>
 
-          <section id="js-react">
-            <h2 class="centered-vertical margin-top">JavaScript & React</h2>
+          <section id="node">
+            <h2 class="centered-vertical margin-top">Node.js</h2>
+
+            <article class="project-card">
+              <div class="project-content">
+                <section class="project-info">
+                  <h3 class="project-heading">Valheim server Discord bot</h3>
+                  <p>A wrapper script that:</p>
+                  <ul>
+                    <li>launches a dedicated Linux server for Valheim game,</li>
+                    <li>interprets server events by matching its standard output to expected regular expressions,</li>
+                    <li>buffers necessary data when forming a message requires multiple server outputs,</li>
+                    <li>sends a message to a Discord channel when a relevant event is detected.</li>
+                  </ul>
+                  <ul>
+                    <li><a href="https://github.com/jupekett/valheim-server-discord-bot">Code repository</a></li>
+                  </ul>
+                </section>
+                <a href="content/valheim.png">
+                  <img
+                      class="thumb"
+                      src="content/valheim-thumb.png"
+                      alt="Picture of the Valheim server Discord bot"
+                  />
+                </a>
+              </div>
+            </article>
+          </section>
+
+          <section id="react">
+            <h2 class="centered-vertical margin-top">React</h2>
 
             <article class="project-card">
               <div class="project-content">
                 <section class="project-info">
                   <h3 class="project-heading">Othello</h3>
                   <p>
-                    A game of Othello created with React. It was developed as a bonus exercise for the course <em>TIEA2120
+                    A game of Othello. It was a bonus exercise for the course <em>TIEA2120
                     Web GUI programming</em> at JYU.
                   </p>
                   <p>
-                    Size of the gameboard can be chosen. Moves are made by drag 'n dropping the player's draggable disk
+                    Size of the gameboard can be chosen. Make moves by drag 'n dropping a player's draggable disk
                     into a legal square, which are highlighted on the board.
+                    Captured disks are also highlighted when calculating your move
                   </p>
-
                   <ul>
                     <li>
                       <a href="http://users.jyu.fi/~jupekett/tiea2120/othello-react/">Deployed site</a>
@@ -78,8 +108,8 @@
                 <section class="project-info">
                   <h3 class="project-heading">Rogaining data front end</h3>
                   <p>
-                    A React front end for displaying and manipulating data from a rogaining contest. This application
-                    was built as an exercise for the course <em>TIEA2120 Web GUI programming</em> at JYU.
+                    A front end for displaying and manipulating data from a rogaining contest. Built as an exercise for
+                    the course <em>TIEA2120 Web GUI programming</em> at JYU.
                   </p>
                   <p>
                     Teams can be added and modified, with some input verification in place. Checkpoint codes and
@@ -111,7 +141,7 @@
           <section id="java-aws">
             <h2 class="centered-vertical margin-top">Java on AWS</h2>
             <p>
-              These applications are written in Java and would be deployed to for example AWS Elastic Beanstalk.
+              These applications are written in Java and would be deployed to <strong>AWS Elastic Beanstalk</strong>.
             </p>
 
             <article class="project-card">
@@ -122,8 +152,8 @@
                   </h3>
                   <p></p>
                   <p>
-                    A RESTful API created during the course <em>TIES4560 SOA and Cloud Computing</em> . Technologies
-                    used include Java and Jersey. Information about usage and requirements can be found on the <a
+                    A RESTful API created during the course <em>TIES4560 SOA and Cloud Computing</em> with <strong>Jersey</strong>
+                    framework. Information about usage and requirements can be found on the <a
                       href="https://github.com/jupekett/ties4560-task4/blob/main/src/main/webapp/documentation/index.html">
                     documentation page</a>.
                   </p>
@@ -158,8 +188,8 @@
                       href="https://www.braveclojure.com/">Clojure for the brave and true</a>.
                   </p>
                   <p>
-                    Most of the source files in com.jupekett.ties4560.task1.client were generated by JAX-WS RI, and much
-                    of the code is based on course examples.
+                    Most of the source files in com.jupekett.ties4560.task1.client were generated by <strong>JAX-WS
+                    RI</strong>, and much of the code is based on course examples.
                   </p>
                   <strong>Notice: taken offline for now to save money.</strong>
                   <ul>
@@ -195,9 +225,7 @@
                   </p>
                   <ul>
                     <li>
-                      <a href="https://gitlab.jyu.fi/jupekett/multicast3"
-                      >Code repository</a
-                      >
+                      <a href="https://gitlab.jyu.fi/jupekett/multicast3">Code repository</a>
                     </li>
                   </ul>
                 </section>
