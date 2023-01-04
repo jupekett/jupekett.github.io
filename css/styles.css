@@ -52,7 +52,7 @@ a {
   text-decoration: line-through;
 }
 
-emph {
+em {
   font-style: italic;
 }
 
@@ -163,7 +163,6 @@ nav a:hover {
   padding: 1em;
   border: 2px solid grey;
   box-shadow: 5px 5px 5px grey;
-  border: 2px solid grey;
 }
 
 .project-heading {
