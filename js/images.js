@@ -1,8 +1,4 @@
-function main() {
-  initImageListeners();
-}
-
-function initImageListeners() {
+export function initImageFadeListeners() {
   const images = document.getElementsByTagName("img");
   if (!images) {
     return;
@@ -16,10 +12,10 @@ function initImageListeners() {
 
 const focusImage = (clickEvent) => {
   clickEvent.preventDefault();
-  anchor = clickEvent.target.parentElement.closest("a");
+  const anchor = clickEvent.target.parentElement.closest("a");
   const imageSource = anchor.href;
 
-  dimLayer = dimTheBackground();
+  const dimLayer = dimTheBackground();
   showFocusedImage(imageSource, dimLayer);
   // setDeletionListener();
 };
@@ -36,27 +32,21 @@ function dimTheBackground() {
 function addFadeInOut(element) {
   const durationSeconds = 0.3;
   element.style.transition = `opacity ${durationSeconds}s`;
-  element.style.opacity = 0;
+  element.style.opacity = "0";
 
   setTimeout(() => {
-    element.style.opacity = 1;
+    element.style.opacity = "1";
   }, 100); // need delay for element to render with 0 opacity first
 
   element.addEventListener("click", () => {
-    element.style.opacity = 0;
-    element.style.pointerEvents = "none"; // do not block clicks anymore
+    element.style.opacity = "0";
+    element.style.pointerEvents = "none"; // only block first click
 
     setTimeout(() => {
       removeSelf(element);
     }, durationSeconds * 1000);
   });
 
-}
-
-function removeChildren(element) {
-  while (element.lastChild) {
-    element.removeChild(element.lastChild);
-  }
 }
 
 function removeSelf(element) {
@@ -72,9 +62,3 @@ function showFocusedImage(source, parent) {
 
   parent.appendChild(image);
 }
-
-function log(message) {
-  console.log(message ? message : "");
-}
-
-main();
