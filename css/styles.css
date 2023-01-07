@@ -230,6 +230,11 @@ img {
     img {
         max-width: 100%;
     }
+
+    .img-focused {
+        max-width: 95vw;
+        max-height: 95vh
+    }
 }
 
 /* BLOG */
